@@ -15,6 +15,24 @@
 
   <img src="https://komarev.com/ghpvc/?username=daviesqunyu&style=flat-square&color=7aa2f7" alt="profile views" />
 
+  <br/><br/>
+
+  <!-- Enhanced Stats Section -->
+  <table align="center">
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://github-readme-stats.vercel.app/api?username=daviesqunyu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&custom_title=daviesqunyu%27s%20GitHub%20Stats" alt="stats" />
+      </td>
+      <td align="center" width="50%">
+        <img src="https://streak-stats.demolab.com?user=daviesqunyu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&fire=DD2727&currStreakLabel=7aa2f7&sideNums=7aa2f7" alt="streak" />
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=daviesqunyu&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages" alt="top langs" />
+
 </div>
 
 
@@ -43,16 +61,11 @@
 
 <img src="assets/section-divider.svg" alt="divider" />
 
-## 📊 GitHub Stats
+## 🧠 GitHub Activity
 
 <div align="center">
-  
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=daviesqunyu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&custom_title=daviesqunyu%27s%20GitHub%20Stats" alt="stats" />
-  <img height="180" src="https://streak-stats.demolab.com?user=daviesqunyu&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&fire=DD2727&currStreakLabel=7aa2f7&sideNums=7aa2f7" alt="streak" />
-  
-  <br/>
-  
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daviesqunyu&layout=compact&theme=tokyonight&hide_border=true&custom_title=Most%20Used%20Languages" alt="top langs" />
+
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=daviesqunyu&theme=tokyo-night&hide_border=true&radius=8&height=300" alt="activity graph" />
 
 </div>
 
