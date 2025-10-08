@@ -10,6 +10,7 @@
   <a href="mailto:daviesqunyu@gmail.com"><img src="https://img.shields.io/badge/Email-daviesqunyu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="mailto:daviskunyu@gmail.com"><img src="https://img.shields.io/badge/Email-daviskunyu%40gmail.com-DB4437?style=for-the-badge&logo=gmail&logoColor=white" alt="Email 2" /></a>
   <a href="https://www.linkedin.com/in/davis-kunyu-980673295/"><img src="https://img.shields.io/badge/LinkedIn-Davis%20Kunyu-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="https://github.com/daviesqunyu?tab=followers"><img src="https://img.shields.io/github/followers/daviesqunyu?label=Followers&style=for-the-badge&logo=github" alt="GitHub followers" /></a>
 
   <br/>
 
@@ -69,6 +70,23 @@
 
 </div>
 
+### Live Summary Cards
+
+<div align="center">
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=daviesqunyu&theme=tokyonight" alt="Profile details summary card for daviesqunyu" />
+
+  <br/>
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=daviesqunyu&theme=tokyonight" alt="Repositories per language summary card for daviesqunyu" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=daviesqunyu&theme=tokyonight" alt="Most commit language summary card for daviesqunyu" />
+
+  <br/>
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=daviesqunyu&theme=tokyonight&utcOffset=3" alt="Productive time (UTC+3) summary card for daviesqunyu" />
+
+</div>
+
 ---
 
 ## 🏆 Achievements & Trophies
@@ -81,18 +99,9 @@
 
 ## 🧰 Tools & Technologies
 <div align="left">
-
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
-![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=java,kotlin,python,cpp,js,ts,react,nodejs,html,css,androidstudio,postgres,sqlite,git,linux,bash,pandas,jupyter,tensorflow&perline=10&theme=dark" alt="Tech stack icons (Java, Kotlin, Python, C++, JS/TS, React, Node.js, HTML/CSS, Android Studio, Postgres, SQLite, Git, Linux, Bash, Pandas, Jupyter, TensorFlow)" />
+  </a>
 
 </div>
 
