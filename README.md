@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="assets/header.svg" alt="banner" />
+  <img src="img/pexels-danny-meneses-340146-943096.jpg" />
 
   <br/>
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=3000&pause=700&color=7aa2f7&center=true&vCenter=true&width=800&lines=Clean+Code.+Clear+UX.+Real+Impact.;Secure+%F0%9F%94%92+and+Data‑Driven+%F0%9F%93%88;Always+learning%2C+always+shipping." alt="typing intro" />
+  <img src="img/pexels-pixabay-356056.jpg font=Inter&weight=700&size=24&duration=3000&pause=700&color=7aa2f7&center=true&vCenter=true&width=800&lines=Clean+Code.+Clear+UX.+Real+Impact.;Secure+%F0%9F%94%92+and+Data‑Driven+%F0%9F%93%88;Always+learning%2C+always+shipping." alt="typing intro" />
 
   <br/>
   <a href="https://github.com/daviesqunyu"><img src="https://img.shields.io/badge/GitHub-daviesqunyu-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
