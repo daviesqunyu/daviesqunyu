@@ -1,8 +1,7 @@
 <div align="center">
-  <img src="img/pexels-danny-meneses-340146-943096.jpg" alt="TRAFFCO thumbnail" width="280" style="border-radius: 8px; border: 2px solid #7aa2f7;"/>
 
   <br/>
-  <img src="img/pexels-pixabay-356056.jpg" width="400" height ="350" />
+  <img src="img/pexels-pixabay-356056.jpg" width="800" height ="350" />
 
   <br/>
   <a href="https://github.com/daviesqunyu"><img src="https://img.shields.io/badge/GitHub-daviesqunyu-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
