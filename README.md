@@ -66,10 +66,10 @@
   <table>
     <tr>
       <td align="center" width="33%">
-        <a href="https://github.com/daviesqunyu?tab=repositories&q=traffco">
+        <a href="https://github.com/daviesqunyu/bridandesignbuild">
           <img src="img/pexels-danny-meneses-340146-943096.jpg" alt="TRAFFCO thumbnail" width="280" style="border-radius: 8px; border: 2px solid #7aa2f7;" />
           <br/>
-          <b>🚗 TRAFFCO · Android</b>
+          <b>🚗 BRIDAN · Construction Company in Kenya</b>
         </a>
         <br/>
         <sub>Real‑time mobility companion for Nairobi CBD</sub>
@@ -84,7 +84,7 @@
         <sub>Intersection simulation and control dashboard</sub>
       </td>
       <td align="center" width="33%">
-        <a href="https://github.com/daviesqunyu?tab=repositories&q=blockchain+vote">
+        <a href="https://github.com/daviesqunyu/VOTING">
           <img src="img/pexels-pixabay-356056.jpg" alt="Blockchain Vote thumbnail" width="280" style="border-radius: 8px; border: 2px solid #7aa2f7;" />
           <br/>
           <b>🔗 Blockchain Vote · FYP</b>
