@@ -183,7 +183,7 @@ Mobile Architecture
 
 # 🏆 PROFESSIONAL MISSION
 
-<img width="100%" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f"/>
+
 
 I design and engineer secure, scalable, and intelligent software systems across multiple platforms.
 
