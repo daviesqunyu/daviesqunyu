@@ -40,7 +40,7 @@
 
 # 🧠 PROFESSIONAL PROFILE
 
-<img align="right" width="420" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
+<img align="right" width="420" height="500" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
 ```yaml
 Name: Davis Kunyu
