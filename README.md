@@ -58,6 +58,7 @@ Core Expertise:
   - Artificial Intelligence Systems
   - Cybersecurity Engineering
   - Blockchain Applications
+  - Data Scientist/ Analyst 
 
 Engineering Focus:
   - Scalable backend systems
@@ -247,6 +248,7 @@ Education:
 Core Expertise:
   - Full Stack Development
   - Android Development
+  - Data Scientist/ Analyst
   - Artificial Intelligence Systems
   - Cybersecurity Engineering
   - Blockchain Applications
