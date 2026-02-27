@@ -5,11 +5,11 @@
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=6,12,20,24,30&text=Davis%20Kunyu&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Engineer%20·%20Android%20Developer%20·%20AI/ML%20·%20Cybersecurity&descAlignY=62&descSize=20"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=6,12,20,24,30&text=Davis%20Kunyu&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Engineer%20·%20Android%20Developer%20·%20DATA SCIENTIST/ANALYST%20·%20AI/ML%20·%20Cybersecurity&descAlignY=62&descSize=20"/>
 
 <br>
 
-<img width="800" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&lines=Full+Stack+Software+Engineer;Android+Developer+(Kotlin);AI%2FML+Systems+Builder;Cybersecurity+Researcher;Blockchain+Application+Developer"/>
+<img width="800" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&lines=Full+Stack+Software+Engineer;Android+Developer+(Java/Kotlin);AI%2FML+Systems+Builder;Cybersecurity+Researcher;Blockchain+Application+Developer"/>
 
 <br><br>
 
