@@ -9,7 +9,7 @@
 
 <br>
 
-<img width="800" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&lines=Full+Stack+Software+Engineer;Android+Developer+(Java/Kotlin);AI%2FML+Systems+Builder;Cybersecurity+Researcher;Blockchain+Application+Developer"/>
+<img width="800" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&lines=Full+Stack+Software+Engineer;Android+Developer+(Java/Kotlin);Data+Scientist/Analyst AI%2FML+Systems+Builder;Cybersecurity+Researcher;Blockchain+Application+Developer"/>
 
 <br><br>
 
