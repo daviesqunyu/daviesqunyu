@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { HeroScene } from "@/components/HeroScene";
 import { SkillsField3D } from "@/components/SkillsField3D";
 import { TechOrbit } from "@/components/TechOrbit";
 
@@ -22,12 +21,12 @@ export default function HomePage() {
                 Nairobi, Kenya · Open to opportunities
               </p>
 
-              <h1 className="h1">
+              <h1 className="h1" data-i18n-key="hero.title">
                 I build <span className="accent">secure</span>, <span className="accent">scalable</span>, and{" "}
                 <span className="accent">useful</span> software across web, mobile, networks, and applied AI.
               </h1>
 
-              <p className="lead">
+              <p className="lead" data-i18n-key="hero.lead">
                 Computer Scientist · Full‑Stack Developer · Network Engineer · Cybersecurity · Data Analysis · Blockchain
               </p>
 
@@ -59,7 +58,6 @@ export default function HomePage() {
             </div>
 
             <div>
-              <HeroScene />
               <TechOrbit />
               <div className="panel" style={{ marginTop: 14 }}>
                 <div className="panel__pad">

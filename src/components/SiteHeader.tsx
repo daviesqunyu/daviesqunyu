@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NavLinks } from "./navLinks";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function SiteHeader() {
   return (
@@ -17,6 +18,7 @@ export function SiteHeader() {
 
         <nav className="nav" aria-label="Primary">
           <NavLinks />
+          <ThemeToggle />
         </nav>
       </div>
     </header>

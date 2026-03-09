@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 import { Bot, Send, Sparkles } from "lucide-react";
 import { portfolioContext } from "@/lib/portfolioContext";
+import { LLMLabModal } from "./LLMLabModal";
 
 type Msg = { role: "user" | "assistant"; text: string };
 type Note = { text: string; createdAt: string };
 
-function answerQuestion(raw: string): string {
+function answerQuestion(raw: string, notes: Note[]): string {
   const text = raw.trim();
   if (!text) return "Ask me about Davis’s projects, experience, skills, or how to contact him.";
   const lower = text.toLowerCase();
@@ -42,6 +43,17 @@ function answerQuestion(raw: string): string {
     return `Davis is open to roles in cybersecurity, software engineering, AI, and blockchain.\n\nBest way to start:\n- Email: ${contact.email}\n- LinkedIn: ${contact.linkedin}`;
   }
 
+  if (lower.includes("notes") || lower.includes("remember")) {
+    if (!notes.length) return "I don’t have any extra notes yet. You can teach me with messages starting with “note:” or “remember:”.";
+    return (
+      "Here are a few things you asked me to remember:\n" +
+      notes
+        .slice(-5)
+        .map((n) => `- ${n.text}`)
+        .join("\n")
+    );
+  }
+
   return (
     "I’m a portfolio assistant focused on Davis Kunyu only.\n" +
     "Try asking about: projects, experience, skills, summary, or how to contact him."
@@ -62,6 +74,7 @@ export function AssistantWidget() {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [notes, setNotes] = useState<Note[]>([]);
+  const [labOpen, setLabOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([
     {
       role: "assistant",
@@ -113,22 +126,23 @@ export function AssistantWidget() {
       }
     }
 
-    // For now we answer based on the static portfolio context.
-    // If you want, we can extend answerQuestion to also look at `notes`.
-    setMsgs((m) => [...m, { role: "user", text }, { role: "assistant", text: answerQuestion(text) }]);
+    // Answer based on portfolio context + any saved notes.
+    setMsgs((m) => [...m, { role: "user", text }, { role: "assistant", text: answerQuestion(text, notes) }]);
   }
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        right: 16,
-        bottom: 16,
-        zIndex: 60,
-        width: open ? 360 : "auto"
-      }}
-    >
-      {open && (
+    <>
+      <LLMLabModal open={labOpen} onClose={() => setLabOpen(false)} />
+      <div
+        style={{
+          position: "fixed",
+          right: 16,
+          bottom: 16,
+          zIndex: 60,
+          width: open ? 360 : "auto"
+        }}
+      >
+        {open && (
         <div className="panel" style={{ marginBottom: 12, overflow: "hidden" }}>
           <div className="panel__pad" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <div className="row" style={{ gap: 10 }}>
@@ -182,6 +196,18 @@ export function AssistantWidget() {
               </div>
             </div>
 
+            <button
+              className="btn btn--ghost"
+              type="button"
+              onClick={() => setLabOpen(true)}
+              style={{ justifyContent: "space-between" }}
+            >
+              <span>Open full AI lab</span>
+              <span className="muted" aria-hidden="true">
+                ↗
+              </span>
+            </button>
+
             {msgs.map((m, i) => (
               <div
                 key={i}
@@ -219,10 +245,11 @@ export function AssistantWidget() {
         </div>
       )}
 
-      <button className="btn btn--primary" type="button" onClick={() => setOpen((v) => !v)}>
-        <Bot size={18} aria-hidden="true" /> AI
-      </button>
-    </div>
+        <button className="btn btn--primary" type="button" onClick={() => setOpen((v) => !v)}>
+          <Bot size={18} aria-hidden="true" /> AI
+        </button>
+      </div>
+    </>
   );
 }
 

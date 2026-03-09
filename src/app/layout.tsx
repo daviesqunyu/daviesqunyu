@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { fraunces, instrumentSans } from "./typography";
 import "./globals.css";
 import { AssistantWidget } from "@/components/AssistantWidget";
+import { HiddenTranslator } from "@/components/HiddenTranslator";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://davis.dvtechnologies.xyz"),
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <AssistantWidget />
+        <HiddenTranslator />
       </body>
     </html>
   );

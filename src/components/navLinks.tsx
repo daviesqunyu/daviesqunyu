@@ -11,11 +11,11 @@ export function NavLinks() {
 
   const links = useMemo(
     () => [
-      { href: "/", label: "Home" },
-      { href: "/about", label: "About" },
-      { href: "/projects", label: "Projects" },
-      { href: "/experience", label: "Experience" },
-      { href: "/contact", label: "Contact" }
+      { href: "/", label: "Home", key: "nav.home" },
+      { href: "/about", label: "About", key: "nav.about" },
+      { href: "/projects", label: "Projects", key: "nav.projects" },
+      { href: "/experience", label: "Experience", key: "nav.experience" },
+      { href: "/contact", label: "Contact", key: "nav.contact" }
     ],
     []
   );
@@ -38,7 +38,7 @@ export function NavLinks() {
       <div className="nav__panel" id="site-nav" data-open={open}>
         {links.map((l) => (
           <Link key={l.href} className="nav__link" href={l.href} data-active={pathname === l.href}>
-            {l.label}
+            <span data-i18n-key={l.key}>{l.label}</span>
           </Link>
         ))}
       </div>
