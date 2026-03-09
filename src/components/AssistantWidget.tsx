@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bot, Send, Sparkles } from "lucide-react";
 import { portfolioContext } from "@/lib/portfolioContext";
 
 type Msg = { role: "user" | "assistant"; text: string };
+type Note = { text: string; createdAt: string };
 
 function answerQuestion(raw: string): string {
   const text = raw.trim();
@@ -60,6 +61,7 @@ function quickAnswers() {
 export function AssistantWidget() {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
+  const [notes, setNotes] = useState<Note[]>([]);
   const [msgs, setMsgs] = useState<Msg[]>([
     {
       role: "assistant",
@@ -67,10 +69,52 @@ export function AssistantWidget() {
     }
   ]);
 
+  // Load saved notes from the browser (acts as simple "learning" memory).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      const raw = window.localStorage.getItem("dk-assistant-notes");
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as Note[];
+      if (Array.isArray(parsed)) setNotes(parsed);
+    } catch {
+      // ignore parse errors
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem("dk-assistant-notes", JSON.stringify(notes));
+    } catch {
+      // ignore quota errors
+    }
+  }, [notes]);
+
   function send() {
     const text = input.trim();
     if (!text) return;
     setInput("");
+
+    // Simple way to "teach" the assistant new info:
+    // If message starts with "note:" or "remember:", store it in local memory.
+    const lower = text.toLowerCase();
+    if (lower.startsWith("note:") || lower.startsWith("remember:")) {
+      const clean = text.replace(/^note:\s*/i, "").replace(/^remember:\s*/i, "").trim();
+      if (clean) {
+        const note: Note = { text: clean, createdAt: new Date().toISOString() };
+        setNotes((prev) => [...prev, note]);
+        setMsgs((m) => [
+          ...m,
+          { role: "user", text },
+          { role: "assistant", text: "Got it. I’ll remember that for future questions." }
+        ]);
+        return;
+      }
+    }
+
+    // For now we answer based on the static portfolio context.
+    // If you want, we can extend answerQuestion to also look at `notes`.
     setMsgs((m) => [...m, { role: "user", text }, { role: "assistant", text: answerQuestion(text) }]);
   }
 
