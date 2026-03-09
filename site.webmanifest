@@ -1,0 +1,18 @@
+{
+  "name": "Davis Kunyu",
+  "short_name": "Davis",
+  "description": "Portfolio — Full Stack, Android, AI/ML, Cybersecurity, Blockchain",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070A12",
+  "theme_color": "#070A12",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
+
