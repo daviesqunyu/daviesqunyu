@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HeroScene } from "@/components/HeroScene";
 import { SkillsField3D } from "@/components/SkillsField3D";
+import { TechOrbit } from "@/components/TechOrbit";
 
 export default function HomePage() {
   return (
@@ -59,6 +60,7 @@ export default function HomePage() {
 
             <div>
               <HeroScene />
+              <TechOrbit />
               <div className="panel" style={{ marginTop: 14 }}>
                 <div className="panel__pad">
                   <h2 className="h2">What I’m focused on</h2>

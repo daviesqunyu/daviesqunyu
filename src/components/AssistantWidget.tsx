@@ -1,24 +1,64 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Bot, Loader2, Send, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Bot, Send, Sparkles } from "lucide-react";
 import { portfolioContext } from "@/lib/portfolioContext";
 
 type Msg = { role: "user" | "assistant"; text: string };
 
-const SYSTEM_PROMPT = `You are Davis Kunyu's portfolio assistant for the site davis.dvtechnologies.xyz.
-You must answer using ONLY the portfolio context provided below.
-If asked for contact/actions, provide mailto: and tel: links and LinkedIn/GitHub URLs. You cannot place phone calls or send emails directly, but you can generate messages the user can copy.
-Be concise, professional, and accurate. If something is unknown, say you don't have that detail.`;
+function answerQuestion(raw: string): string {
+  const text = raw.trim();
+  if (!text) return "Ask me about Davis’s projects, experience, skills, or how to contact him.";
+  const lower = text.toLowerCase();
+  const { contact, projects, experience, roles, summary, highlights } = portfolioContext;
 
-function buildContextBlock() {
-  return JSON.stringify(portfolioContext, null, 2);
+  if (lower.includes("email")) return `You can email Davis at ${contact.email} (mailto:${contact.email}).`;
+  if (lower.includes("phone") || lower.includes("call")) {
+    return `Davis’s phone is ${contact.phone} (tel:${contact.phone}).`;
+  }
+  if (lower.includes("linkedin")) return `LinkedIn: ${contact.linkedin}`;
+  if (lower.includes("github")) return `GitHub: ${contact.github}`;
+
+  if (lower.includes("who are you") || lower.includes("who is davis") || lower.includes("summary")) {
+    return `${summary}\n\nCurrent focus: ${highlights.join(" • ")}`;
+  }
+
+  if (lower.includes("experience") || lower.includes("work")) {
+    return experience.map((e) => `- ${e.title} at ${e.org} (${e.dates}, ${e.location})`).join("\n");
+  }
+
+  if (lower.includes("project")) {
+    return projects
+      .map((p) => `- ${p.title}${p.repo ? ` — repo: ${p.repo}` : ""} [${p.tags.join(", ")}]`)
+      .join("\n");
+  }
+
+  if (lower.includes("skills") || lower.includes("stack") || lower.includes("tech")) {
+    return `Davis works across: ${roles.join(", ")}.\n\nHighlights:\n- ${highlights.join("\n- ")}`;
+  }
+
+  if (lower.includes("hire") || lower.includes("job") || lower.includes("opportunit")) {
+    return `Davis is open to roles in cybersecurity, software engineering, AI, and blockchain.\n\nBest way to start:\n- Email: ${contact.email}\n- LinkedIn: ${contact.linkedin}`;
+  }
+
+  return (
+    "I’m a portfolio assistant focused on Davis Kunyu only.\n" +
+    "Try asking about: projects, experience, skills, summary, or how to contact him."
+  );
+}
+
+function quickAnswers() {
+  const c = portfolioContext.contact;
+  return [
+    { q: "Email Davis", a: `Email: ${c.email}\nmailto:${c.email}` },
+    { q: "Call Davis", a: `Phone: ${c.phone}\ntel:${c.phone}` },
+    { q: "LinkedIn", a: c.linkedin },
+    { q: "GitHub", a: c.github }
+  ];
 }
 
 export function AssistantWidget() {
   const [open, setOpen] = useState(false);
-  const [busy, setBusy] = useState(false);
-  const [ready, setReady] = useState<"idle" | "loading" | "ready" | "fallback">("idle");
   const [input, setInput] = useState("");
   const [msgs, setMsgs] = useState<Msg[]>([
     {
@@ -27,103 +67,11 @@ export function AssistantWidget() {
     }
   ]);
 
-  const engineRef = useRef<any>(null);
-  const ctx = useMemo(() => buildContextBlock(), []);
-
-  useEffect(() => {
-    if (!open) return;
-    if (ready === "ready" || ready === "fallback" || ready === "loading") return;
-
-    const load = async () => {
-      setReady("loading");
-      try {
-        // Lazy-load only when opened so the homepage stays fast.
-        const webllm = await import("@mlc-ai/web-llm");
-        if (!("gpu" in navigator)) {
-          setReady("fallback");
-          return;
-        }
-
-        const engine = await webllm.CreateMLCEngine(
-          // Small, runs locally in browser WebGPU. Users can change later if desired.
-          "Llama-3.1-8B-Instruct-q4f16_1-MLC",
-          {
-            initProgressCallback: () => {
-              // keep minimal; state already shows loading
-            }
-          }
-        );
-        engineRef.current = engine;
-        setReady("ready");
-      } catch {
-        setReady("fallback");
-      }
-    };
-
-    void load();
-  }, [open, ready]);
-
-  const quickAnswers = () => {
-    const c = portfolioContext.contact;
-    return [
-      { q: "Email Davis", a: `Email: ${c.email}\nMailto: mailto:${c.email}` },
-      { q: "Call Davis", a: `Phone: ${c.phone}\nTel: tel:${c.phone}` },
-      { q: "LinkedIn", a: c.linkedin },
-      { q: "GitHub", a: c.github }
-    ];
-  };
-
-  async function send() {
+  function send() {
     const text = input.trim();
-    if (!text || busy) return;
+    if (!text) return;
     setInput("");
-    setMsgs((m) => [...m, { role: "user", text }]);
-
-    if (ready !== "ready" || !engineRef.current) {
-      // fallback: deterministic, no model
-      const c = portfolioContext.contact;
-      const lower = text.toLowerCase();
-      let reply =
-        "I can answer with portfolio details and provide contact links. Try: “summarize Davis”, “projects”, or “how do I contact?”.";
-
-      if (lower.includes("email")) reply = `Email: ${c.email}\nmailto:${c.email}`;
-      else if (lower.includes("phone") || lower.includes("call")) reply = `Phone: ${c.phone}\ntel:${c.phone}`;
-      else if (lower.includes("linkedin")) reply = c.linkedin;
-      else if (lower.includes("github")) reply = c.github;
-      else if (lower.includes("projects"))
-        reply = portfolioContext.projects.map((p) => `- ${p.title}${p.repo ? ` (${p.repo})` : ""}`).join("\n");
-      else if (lower.includes("experience"))
-        reply = portfolioContext.experience.map((e) => `- ${e.title} · ${e.org} (${e.dates})`).join("\n");
-
-      setMsgs((m) => [...m, { role: "assistant", text: reply }]);
-      return;
-    }
-
-    setBusy(true);
-    try {
-      const engine = engineRef.current;
-      const prompt = `${SYSTEM_PROMPT}\n\nPORTFOLIO_CONTEXT_JSON:\n${ctx}\n\nUSER_QUESTION:\n${text}\n`;
-
-      const res = await engine.chat.completions.create({
-        messages: [{ role: "system", content: SYSTEM_PROMPT }, { role: "user", content: `Context:\n${ctx}\n\n${text}` }],
-        temperature: 0.2,
-        max_tokens: 450
-      });
-
-      const out = res?.choices?.[0]?.message?.content?.trim() || "I couldn’t generate an answer. Try again.";
-      setMsgs((m) => [...m, { role: "assistant", text: out }]);
-    } catch {
-      setMsgs((m) => [
-        ...m,
-        {
-          role: "assistant",
-          text: "AI assistant failed to load on this device. You can still use the contact links and quick answers."
-        }
-      ]);
-      setReady("fallback");
-    } finally {
-      setBusy(false);
-    }
+    setMsgs((m) => [...m, { role: "user", text }, { role: "assistant", text: answerQuestion(text) }]);
   }
 
   return (
@@ -146,11 +94,7 @@ export function AssistantWidget() {
                   Portfolio Assistant
                 </div>
                 <div className="muted" style={{ fontSize: 12 }}>
-                  {ready === "ready"
-                    ? "Local AI (WebGPU)"
-                    : ready === "loading"
-                      ? "Loading model…"
-                      : "Quick answers mode"}
+                  Runs fully in your browser, no external API.
                 </div>
               </div>
             </div>
@@ -169,32 +113,30 @@ export function AssistantWidget() {
               gap: 10
             }}
           >
-            {ready !== "ready" && (
-              <div className="card" style={{ background: "rgba(255,255,255,.03)" }}>
-                <div className="row">
-                  <Sparkles size={18} aria-hidden="true" />
-                  <div className="brand__name" style={{ fontSize: 16 }}>
-                    Quick actions
-                  </div>
-                </div>
-                <div style={{ marginTop: 10, display: "grid", gap: 8 }}>
-                  {quickAnswers().map((qa) => (
-                    <button
-                      key={qa.q}
-                      className="btn"
-                      type="button"
-                      onClick={() => setMsgs((m) => [...m, { role: "assistant", text: qa.a }])}
-                      style={{ justifyContent: "space-between" }}
-                    >
-                      <span>{qa.q}</span>
-                      <span className="muted" aria-hidden="true">
-                        →
-                      </span>
-                    </button>
-                  ))}
+            <div className="card" style={{ background: "rgba(255,255,255,.03)" }}>
+              <div className="row">
+                <Sparkles size={18} aria-hidden="true" />
+                <div className="brand__name" style={{ fontSize: 16 }}>
+                  Quick actions
                 </div>
               </div>
-            )}
+              <div style={{ marginTop: 10, display: "grid", gap: 8 }}>
+                {quickAnswers().map((qa) => (
+                  <button
+                    key={qa.q}
+                    className="btn"
+                    type="button"
+                    onClick={() => setMsgs((m) => [...m, { role: "assistant", text: qa.a }])}
+                    style={{ justifyContent: "space-between" }}
+                  >
+                    <span>{qa.q}</span>
+                    <span className="muted" aria-hidden="true">
+                      →
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
 
             {msgs.map((m, i) => (
               <div
@@ -212,15 +154,6 @@ export function AssistantWidget() {
                 </div>
               </div>
             ))}
-
-            {ready === "loading" && (
-              <div className="card" style={{ background: "rgba(255,255,255,.03)" }}>
-                <div className="row">
-                  <Loader2 className="spin" size={18} aria-hidden="true" />
-                  <div className="p">Loading local model (first time can take a bit)…</div>
-                </div>
-              </div>
-            )}
           </div>
 
           <div className="divider" />
@@ -235,7 +168,7 @@ export function AssistantWidget() {
               }}
               style={{ flex: 1 }}
             />
-            <button className="btn btn--primary" type="button" onClick={() => void send()} disabled={busy}>
+            <button className="btn btn--primary" type="button" onClick={() => void send()}>
               <Send size={18} aria-hidden="true" />
             </button>
           </div>

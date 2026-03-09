@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mlc-ai/web-llm": "^0.2.79",
     "@react-three/drei": "^10.7.4",
     "@react-three/fiber": "^9.3.0",
     "framer-motion": "^12.23.12",
@@ -29,4 +28,3 @@
     "typescript": "^5.9.2"
   }
 }
-
