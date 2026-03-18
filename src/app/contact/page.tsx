@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Github, Linkedin, Mail, Phone, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, ArrowRight, Download, MapPin } from "lucide-react";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -22,16 +22,16 @@ export default function ContactPage() {
               <span className="dot" aria-hidden="true" />
               Contact
             </p>
-            <h1 className="h1">Let’s build something that lasts.</h1>
+            <h1 className="h1">Let&apos;s build something that lasts.</h1>
             <p className="lead">
-              Fastest is email. If you’re hiring, include the role, stack, location/timezone, and what “success” means in
-              the first 60–90 days.
+              Fastest is email. If you&apos;re hiring, include the role, stack, location/timezone, and what &ldquo;success&rdquo; means in
+              the first 60&ndash;90 days.
             </p>
 
             <div className="cardGrid" style={{ marginTop: 22 }}>
               <div className="card">
                 <div className="row">
-                  <Mail size={18} aria-hidden="true" />
+                  <Mail size={20} aria-hidden="true" />
                   <div className="brand__name">Email</div>
                 </div>
                 <p className="p" style={{ marginTop: 10 }}>
@@ -51,7 +51,7 @@ export default function ContactPage() {
 
               <div className="card">
                 <div className="row">
-                  <Linkedin size={18} aria-hidden="true" />
+                  <Linkedin size={20} aria-hidden="true" />
                   <div className="brand__name">LinkedIn</div>
                 </div>
                 <p className="p" style={{ marginTop: 10 }}>
@@ -78,7 +78,7 @@ export default function ContactPage() {
 
               <div className="card">
                 <div className="row">
-                  <Github size={18} aria-hidden="true" />
+                  <Github size={20} aria-hidden="true" />
                   <div className="brand__name">GitHub</div>
                 </div>
                 <p className="p" style={{ marginTop: 10 }}>
@@ -94,22 +94,55 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="panel" style={{ marginTop: 16 }}>
-              <div className="panel__pad">
-                <div className="row">
-                  <Phone size={18} aria-hidden="true" />
-                  <h2 className="h2" style={{ fontSize: 24 }}>
-                    Phone
-                  </h2>
+            <div className="cardGrid" style={{ marginTop: 14, gridTemplateColumns: "1fr 1fr" }}>
+              <div className="panel">
+                <div className="panel__pad">
+                  <div className="row">
+                    <Phone size={20} aria-hidden="true" />
+                    <h2 className="h3">Phone</h2>
+                  </div>
+                  <p className="p" style={{ marginTop: 10 }}>
+                    <a className="accent" href="tel:+254759075816">
+                      +254 759 075 816
+                    </a>
+                  </p>
+                  <p className="p muted" style={{ marginTop: 8, fontSize: 13 }}>
+                    For D&amp;V Technologies work, start with email &mdash; I&apos;ll route it correctly.
+                  </p>
                 </div>
-                <p className="p" style={{ marginTop: 10 }}>
-                  <a className="accent" href="tel:+254759075816">
-                    +254 759 075 816
+              </div>
+
+              <div className="panel">
+                <div className="panel__pad">
+                  <div className="row">
+                    <MapPin size={20} aria-hidden="true" />
+                    <h2 className="h3">Location</h2>
+                  </div>
+                  <p className="p" style={{ marginTop: 10 }}>
+                    <span className="accent">Nairobi, Kenya</span>
+                  </p>
+                  <p className="p muted" style={{ marginTop: 8, fontSize: 13 }}>
+                    Open to remote, hybrid, and on-site roles within Kenya and internationally.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Resume / CTA */}
+            <div className="panel" style={{ marginTop: 22 }}>
+              <div className="panel__pad" style={{ textAlign: "center", padding: "28px 18px" }}>
+                <h2 className="h2">Want my resume?</h2>
+                <p className="p" style={{ marginTop: 10, marginInline: "auto" }}>
+                  Download my CV or reach out directly. I&apos;m happy to share more details about my experience and projects.
+                </p>
+                <div className="row" style={{ marginTop: 16, justifyContent: "center" }}>
+                  <a className="btn btn--primary" href="mailto:daviskunyu@gmail.com?subject=Resume%20Request">
+                    <Download size={16} aria-hidden="true" /> Request resume
                   </a>
-                </p>
-                <p className="p muted" style={{ marginTop: 10 }}>
-                  For D&amp;V Technologies work, start with email—I'll route it correctly.
-                </p>
+                  <a className="btn btn--ghost" href="https://github.com/daviesqunyu" target="_blank" rel="noreferrer">
+                    View GitHub <ArrowRight size={18} aria-hidden="true" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -119,4 +152,3 @@ export default function ContactPage() {
     </>
   );
 }
-

@@ -29,6 +29,10 @@
 <img src="https://img.shields.io/badge/Phone-%2B254759075816-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
 </a>
 
+<a href="https://davis.dvtechnologies.xyz">
+<img src="https://img.shields.io/badge/Portfolio-davis.dvtechnologies.xyz-7C5CFF?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
+
 <br><br>
 
 <img src="https://komarev.com/ghpvc/?username=daviesqunyu&style=for-the-badge&color=58a6ff"/>
