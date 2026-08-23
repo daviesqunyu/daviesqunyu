@@ -22,6 +22,10 @@
 
 <br><br>
 
+<a href="https://davis.dvtechnologies.xyz">
+<img src="https://img.shields.io/badge/🌐_Portfolio-davis.dvtechnologies.xyz-7C5CFF?style=for-the-badge"/>
+</a>
+
 <a href="mailto:daviskunyu@gmail.com">
 <img src="https://img.shields.io/badge/Email-daviskunyu%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
@@ -34,12 +38,12 @@
 <img src="https://img.shields.io/badge/LinkedIn-Davis%20Kunyu-0A66C2?style=for-the-badge&logo=linkedin"/>
 </a>
 
-<a href="tel:+254759075816">
-<img src="https://img.shields.io/badge/Phone-%2B254759075816-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+<a href="https://wa.me/254759075816">
+<img src="https://img.shields.io/badge/WhatsApp-%2B254759075816-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
 </a>
 
 <a href="https://dvtechnologies.xyz">
-<img src="https://img.shields.io/badge/D%26V_Technologies-dvtechnologies.xyz-7C5CFF?style=for-the-badge&logo=vercel&logoColor=white"/>
+<img src="https://img.shields.io/badge/D%26V_Technologies-dvtechnologies.xyz-009688?style=for-the-badge&logo=internetexplorer&logoColor=white"/>
 </a>
 
 <br><br>
@@ -135,56 +139,13 @@ Languages Spoken:
 
 # 🚀 FEATURED PROJECTS
 
-## 🏗️ Construction Platform System
-
-<a href="https://github.com/daviesqunyu/bridandesignbuild">
-<img width="100%" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"/>
-</a>
-
-Enterprise construction company website platform — built and maintained under **D&V Technologies**, covering hosting/domain management, lead capture and ongoing client support.
-
-<p>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white"/>
-</p>
-
-<a href="https://github.com/daviesqunyu/bridandesignbuild">
-<img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
-</a>
-
----
-
-## 🚦 AI Smart Traffic Control System
-
-<a href="https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System">
-<img width="100%" src="https://images.unsplash.com/photo-1504215680853-026ed2a45def"/>
-</a>
-
-AI-powered traffic light control & simulation system built around **Nairobi CBD** — interactive maps, traffic visualization and monitoring workflows.
-
-<p>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
-<img src="https://img.shields.io/badge/Google_Maps_API-4285F4?style=flat-square&logo=googlemaps&logoColor=white"/>
-<img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-</p>
-
-<a href="https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System">
-<img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
-</a>
-
----
-
-## 🗳️ Blockchain Voting System
+## 🗳️ Blockchain-Based Digital Voting System
 
 <a href="https://github.com/daviesqunyu/VOTING">
-<img width="100%" src="https://images.unsplash.com/photo-1639322537228-f710d846310a"/>
+<img width="100%" src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1100&h=360&q=70"/>
 </a>
 
-Secure decentralized e-voting prototype focused on **integrity & auditability** — smart contract logic, cryptographic principles and resistance to manipulation.
+**Final year research project** focused on transparency, integrity, voter anonymity, auditability and fraud prevention using smart contracts and cryptographic concepts.
 
 <p>
 <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white"/>
@@ -199,24 +160,102 @@ Secure decentralized e-voting prototype focused on **integrity & auditability** 
 
 ---
 
-## 📱 Android Smart Mobility Application
+## 🏗️ Bridan Design Build — Construction Platform
 
-<a href="https://github.com/daviesqunyu/Traffic_app">
-<img width="100%" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c"/>
+<a href="https://github.com/daviesqunyu/bridandesignbuild">
+<img width="100%" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&h=360&q=70"/>
 </a>
 
-Android-based smart mobility system with real-time data flows backed by Firebase infrastructure.
+Active client engagement under **D&V Technologies** — web presence, lead capture, hosting/domain setup, analytics and ongoing maintenance for a design-build construction company.
 
 <p>
-<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-<img src="https://img.shields.io/badge/Android_SDK-3DDC84?style=flat-square&logo=android&logoColor=white"/>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white"/>
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white"/>
+<img src="https://img.shields.io/badge/Analytics-F9AB00?style=flat-square&logo=googleanalytics&logoColor=black"/>
+</p>
+
+<a href="https://github.com/daviesqunyu/bridandesignbuild">
+<img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+
+---
+
+## 🚦 Traffic Lights Control System (TLCS)
+
+<a href="https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System">
+<img width="100%" src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1100&h=360&q=70"/>
+</a>
+
+Web-based traffic management system with interactive maps and monitoring, designed around **Nairobi CBD** — emphasis on visualization and data-ready flows.
+
+<p>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google_Maps_API-4285F4?style=flat-square&logo=googlemaps&logoColor=white"/>
+<img src="https://img.shields.io/badge/Machine_Learning-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+</p>
+
+<a href="https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System">
+<img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+
+---
+
+## 📱 TRAFFCO — Android Traffic Application
+
+<a href="https://github.com/daviesqunyu/Traffic_app">
+<img width="100%" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1100&h=360&q=70"/>
+</a>
+
+Android application for traffic navigation and route guidance with **Google Maps integration** and real-time awareness.
+
+<p>
+<img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
 <img src="https://img.shields.io/badge/Java-E76F00?style=flat-square&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white"/>
 </p>
 
 <a href="https://github.com/daviesqunyu/Traffic_app">
 <img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
 </a>
+
+---
+
+## 🏨 Hotel Management System
+
+<a href="https://github.com/daviesqunyu/DAVIS-HOTEL">
+<img width="100%" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1100&h=360&q=70"/>
+</a>
+
+Online hotel management system supporting room management, booking workflows and administrative control.
+
+<p>
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CRUD_Systems-009688?style=flat-square"/>
+</p>
+
+<a href="https://github.com/daviesqunyu/DAVIS-HOTEL">
+<img src="https://img.shields.io/badge/%20View_Repository-181717?style=for-the-badge&logo=github"/>
+</a>
+
+---
+
+## 📊 Integrated Facility Management Data Analysis
+
+<img width="100%" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1100&h=360&q=70"/>
+
+Data analysis project on facility management datasets — incidents, work orders and energy consumption. Summary statistics, trend detection and actionable recommendations.
+
+<p>
+<img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Reporting-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+</p>
 
 ---
 
@@ -227,35 +266,67 @@ Android-based smart mobility system with real-time data flows backed by Firebase
 Live repository cards — click through to explore ⚡
 
 <a href="https://github.com/daviesqunyu/crypto-binance-trading-bot">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=crypto-binance-trading-bot&theme=tokyonight&hide_border=true"/>
-</a>
-
-<a href="https://github.com/daviesqunyu/DAVIS-HOTEL">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=DAVIS-HOTEL&theme=tokyonight&hide_border=true"/>
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=crypto-binance-trading-bot&theme=tokyonight&hide_border=true"/>
 </a>
 
 <a href="https://github.com/daviesqunyu/dtdpaymentsbot">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=dtdpaymentsbot&theme=tokyonight&hide_border=true"/>
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=dtdpaymentsbot&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/dtdsalesbotnew">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=dtdsalesbotnew&theme=tokyonight&hide_border=true"/>
 </a>
 
 <br><br>
 
 <a href="https://github.com/daviesqunyu/formdotcom">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=formdotcom&theme=tokyonight&hide_border=true"/>
-</a>
-
-<a href="https://github.com/daviesqunyu/GDA-General-Data-Analisis-">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=GDA-General-Data-Analisis-&theme=tokyonight&hide_border=true"/>
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=formdotcom&theme=tokyonight&hide_border=true"/>
 </a>
 
 <a href="https://github.com/daviesqunyu/secure-pay">
-<img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=daviesqunyu&repo=secure-pay&theme=tokyonight&hide_border=true"/>
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=secure-pay&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/GDA-General-Data-Analisis-">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=GDA-General-Data-Analisis-&theme=tokyonight&hide_border=true"/>
 </a>
 
 <br><br>
 
+<a href="https://github.com/daviesqunyu/data-analysis2">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=data-analysis2&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/Ndakaru">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=Ndakaru&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/CryptoConnect">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=CryptoConnect&theme=tokyonight&hide_border=true"/>
+</a>
+
+<br><br>
+
+<a href="https://github.com/daviesqunyu/E-vot">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=E-vot&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/dtd-store">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=dtd-store&theme=tokyonight&hide_border=true"/>
+</a>
+
+<a href="https://github.com/daviesqunyu/D-V-TECHNOLOGIES.XYZ">
+<img width="32%" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=daviesqunyu&repo=D-V-TECHNOLOGIES.XYZ&theme=tokyonight&hide_border=true"/>
+</a>
+
+<br><br>
+
+<a href="https://davis.dvtechnologies.xyz">
+<img src="https://img.shields.io/badge/🧑🏿‍💻_See_All_Projects_Live-davis.dvtechnologies.xyz-7C5CFF?style=for-the-badge"/>
+</a>
+
 <a href="https://github.com/daviesqunyu?tab=repositories">
-<img src="https://img.shields.io/badge/Browse_All_23_Repositories-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/Browse_All_Repositories_@_GitHub-181717?style=for-the-badge&logo=github"/>
 </a>
 
 </div>
@@ -269,7 +340,7 @@ Live repository cards — click through to explore ⚡
 ### 🖥️ Languages
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=typescript,javascript,python,java,kotlin,cpp,php,html,css"/>
+<img src="https://skillicons.dev/icons?i=typescript,javascript,python,java,kotlin,cpp,r,php,html,css"/>
 </div>
 
 ### ⚛️ Frontend
@@ -321,21 +392,33 @@ Live repository cards — click through to explore ⚡
 | | Service | Description |
 |---|---|---|
 | 💻 | **Full Stack Development** | End-to-end web applications — requirements → build → deploy → maintain |
-| 📱 | **Android Development** | Native mobile apps with Java/Kotlin, Firebase backends |
+| 📱 | **Android Development** | Native mobile apps with Java/Kotlin, Google Maps & Firebase integrations |
 | 🔐 | **Cybersecurity** | Security assessments, hardening, threat modeling & secure-by-default engineering |
 | 🌐 | **Network Engineering** | Wi-Fi deployment, routing/switching, cabling & enterprise IT support |
-| 📊 | **Data Analysis** | Insight extraction, visualization & reporting with Python/Jupyter |
+| 📊 | **Data Analysis** | Insight extraction, visualization & reporting with Python/R/Jupyter |
 | ⛓️ | **Blockchain Solutions** | Smart contracts, decentralized apps & auditable systems |
 
 ---
 
 <a id="-github-performance"></a>
 
-# 🏆 GITHUB ACHIEVEMENTS
+# 🏆 ACHIEVEMENTS & QUICK FACTS
 
 <div align="center">
 
-<img width="98%" src="https://github-profile-trophy.vercel.app/?username=daviesqunyu&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8"/>
+<img src="https://img.shields.io/badge/🏆_GitHub_Achievement-Pull_Shark-181717?style=flat-square&logo=github&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/🎓_BSc-Computer_Science-58A6FF?style=flat-square"/>
+&nbsp;
+<img src="https://img.shields.io/badge/🎖️_Honours-Second_Class_Upper-3FB950?style=flat-square"/>
+
+<br>
+
+<img src="https://img.shields.io/badge/💼_Founder-D%26V_Technologies-7C5CFF?style=flat-square"/>
+&nbsp;
+<img src="https://img.shields.io/badge/📦_20%2B_Public_Repositories-181717?style=flat-square&logo=github&logoColor=white"/>
+&nbsp;
+<img src="https://img.shields.io/badge/✅_Status-Open_to_Opportunities-25D366?style=flat-square"/>
 
 </div>
 
@@ -345,13 +428,17 @@ Live repository cards — click through to explore ⚡
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=daviesqunyu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=daviesqunyu&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=daviesqunyu&layout=compact&theme=tokyonight&hide_border=true"/>
+<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=daviesqunyu&layout=compact&theme=tokyonight&hide_border=true"/>
 
 <br><br>
 
-<img width="98%" src="https://streak-stats.demolab.com/?user=daviesqunyu&theme=tokyonight&hide_border=true"/>
+<img width="98%" src="https://streak-stats.demolab.com/?user=daviesqunyu&theme=tokyonight&hide_border=true&locale=en"/>
+
+<br><br>
+
+<img width="98%" src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
 
 </div>
 
@@ -389,6 +476,10 @@ Live repository cards — click through to explore ⚡
 
 <br>
 
+<a href="https://davis.dvtechnologies.xyz">
+<img src="https://img.shields.io/badge/Portfolio-davis.dvtechnologies.xyz-7C5CFF?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
+
 <a href="mailto:daviskunyu@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
@@ -405,11 +496,13 @@ Live repository cards — click through to explore ⚡
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
-<a href="https://dvtechnologies.xyz">
-<img src="https://img.shields.io/badge/D%26V_Technologies-7C5CFF?style=for-the-badge&logo=vercel&logoColor=white"/>
+<a href="https://wa.me/254759075816">
+<img src="https://img.shields.io/badge/WhatsApp_Chat-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
 </a>
 
 <br><br>
+
+[⬆ Back to Top](#-davis-kunyu)
 
 ⭐ *From [Davis Kunyu](https://github.com/daviesqunyu) — if you like my work, give my repos a star!*
 
