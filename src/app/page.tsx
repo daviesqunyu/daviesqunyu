@@ -65,6 +65,13 @@ const featuredProjects = [
     tags: ["Python", "ML", "Data", "Maps"],
     href: "https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System.git",
     img: "https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=600&h=340&fit=crop"
+  },
+  {
+    title: "AI-Powered Threat Detection",
+    desc: "Machine learning model for identifying security threats and anomalies in network traffic, trained on labeled cybersecurity datasets.",
+    tags: ["Python", "TensorFlow", "Cybersecurity", "ML"],
+    href: "https://github.com/daviesqunyu/ai-threat-detection",
+    img: "https://images.unsplash.com/photo-1485511102305-477d8e5e74b5?w=600&h=340&fit=crop"
   }
 ];
 

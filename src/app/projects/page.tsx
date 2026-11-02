@@ -63,6 +63,13 @@ const projects: Project[] = [
       "Data analysis project (facility management datasets: incidents, work orders, energy consumption). Summary statistics, trends, and recommendations.",
     tags: ["R", "Python", "Excel", "Reporting"],
     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop"
+  },
+  {
+    title: "AI-Powered Threat Detection",
+    description:
+      "Machine learning model for identifying security threats and anomalies in network traffic, trained on labeled cybersecurity datasets.",
+    tags: ["Python", "TensorFlow", "Cybersecurity", "ML"],
+    img: "https://images.unsplash.com/photo-1485511102305-477d8e5e74b5?w=600&h=340&fit=crop"
   }
 ];
 

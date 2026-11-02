@@ -106,6 +106,15 @@ export const portfolioContext: PortfolioContext = {
         "Interactive maps and data-ready workflows."
       ],
       repo: "https://github.com/daviesqunyu/Nairobi-app-TLCS-Traffic-Lights-Control-System.git"
+    },
+    {
+      title: "AI-Powered Threat Detection",
+      tags: ["Python", "TensorFlow", "Cybersecurity", "ML"],
+      bullets: [
+        "Machine learning model for identifying security threats and anomalies in network traffic.",
+        "Trained on labeled cybersecurity datasets with real‑time classification.",
+        "Deployed as a Flask API for integration with security monitoring tools."
+      ]
     }
   ]
 };
