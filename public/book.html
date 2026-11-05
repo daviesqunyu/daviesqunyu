@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davis Kunyu — Field Notes</title>
+  <meta name="description" content="Davis Kunyu Wamalwa, lead software developer in Nairobi. A field book of work, projects, and notes." />
+  <link rel="canonical" href="https://davis.dvtechnologies.xyz/" />
+  <meta property="og:title" content="Davis Kunyu — Field Notes" />
+  <meta property="og:description" content="Open the book. Chapters on software, Nairobi, and the work in between." />
+  <meta property="og:url" content="https://davis.dvtechnologies.xyz/" />
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/book.css" />
+</head>
+<body>
+  <main class="stage">
+    <img class="stage-bg" src="/images/desk-night.jpg" alt="" />
+    <div class="wash" aria-hidden="true"></div>
+    <div class="opener">
+      <button class="volume" id="book" type="button" aria-label="Open the field book">
+        <span class="volume-pages" aria-hidden="true"></span>
+        <span class="volume-cover">
+          <small>Nairobi · 2026</small>
+          <strong>Field<br />Notes</strong>
+          <em>Davis Kunyu</em>
+        </span>
+      </button>
+      <p class="hint" id="hint">Open the book</p>
+      <a class="skip-read" href="/contents/">Skip to the contents</a>
+    </div>
+  </main>
+  <script>
+    var book = document.getElementById("book");
+    var hint = document.getElementById("hint");
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    book.addEventListener("click", function () {
+      if (reduce) { location.href = "/contents/"; return; }
+      book.classList.add("is-open");
+      hint.textContent = "The first page";
+      window.setTimeout(function () { location.href = "/contents/"; }, 980);
+    });
+  </script>
+</body>
+</html>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://davis.dvtechnologies.xyz"),
   title: "Davis Kunyu | Lead Software Developer",
   description:
-    "Davis Kunyu Wamalwa, lead software developer in Nairobi. Web, systems, and AI — flight DK-2026.",
+    "Davis Kunyu Wamalwa, lead software developer in Nairobi. A field book of work, projects, and notes.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
